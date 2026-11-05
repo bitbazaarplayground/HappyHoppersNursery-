@@ -42,7 +42,7 @@ export function Header({ copy, language, navigate, setLanguage, route }) {
         </nav>
         <div className="header-actions">
           <LanguageSwitcher copy={copy} language={language} setLanguage={setLanguage} />
-          <LinkButton navigate={navigate} path="/contact-us" variant="dark">{copy.common.bookVisit}</LinkButton>
+          <LinkButton navigate={navigate} path="/contact-us#visit-requests" variant="dark">{copy.common.bookVisit}</LinkButton>
         </div>
         <div className="mobile-controls">
           <LanguageSwitcher copy={copy} language={language} setLanguage={setLanguage} />
@@ -61,7 +61,7 @@ export function Header({ copy, language, navigate, setLanguage, route }) {
       {isMenuOpen && (
         <nav id="mobile-navigation" className="mobile-navigation" aria-label={copy.a11y.mainNavigation}>
           <Navigation copy={copy} navigate={navigate} route={route} closeMenu={() => setIsMenuOpen(false)} />
-          <LinkButton navigate={navigate} path="/contact-us" variant="dark">{copy.common.bookVisit}</LinkButton>
+          <LinkButton navigate={navigate} path="/contact-us#visit-requests" variant="dark" onClick={() => setIsMenuOpen(false)}>{copy.common.bookVisit}</LinkButton>
         </nav>
       )}
     </header>

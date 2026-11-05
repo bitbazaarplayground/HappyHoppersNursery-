@@ -2,6 +2,10 @@ import { getNavigation } from '../content/translations'
 import { Brand } from './Brand'
 
 export function Footer({ copy, navigate }) {
+  const footerNavigation = [
+    ...getNavigation(copy).filter((item) => item.key !== 'home'),
+    { key: 'contact', path: '/contact-us', label: copy.common.contactUs },
+  ]
   const handleClick = (event, path) => {
     event.preventDefault()
     navigate(path)
@@ -18,7 +22,7 @@ export function Footer({ copy, navigate }) {
           <div>
             <h2 className="footer-nav-title">{copy.footer.explore}</h2>
             <ul className="footer-links">
-              {getNavigation(copy).slice(1, 6).map((item) => (
+              {footerNavigation.map((item) => (
                 <li key={item.key}><a className="footer-link" href={item.path} onClick={(event) => handleClick(event, item.path)}>{item.label}</a></li>
               ))}
             </ul>

@@ -1,9 +1,10 @@
 import { ArrowIcon } from './Icons'
 
-export function LinkButton({ children, navigate, path, variant = 'dark', arrow = false }) {
+export function LinkButton({ children, navigate, path, variant = 'dark', arrow = false, onClick }) {
   const handleClick = (event) => {
     event.preventDefault()
     navigate(path)
+    onClick?.()
   }
 
   return (

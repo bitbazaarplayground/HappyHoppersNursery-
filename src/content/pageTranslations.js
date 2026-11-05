@@ -297,6 +297,13 @@ export const pageTranslations = {
         title: 'A friendly hello is a very good place to start.',
         description: 'Whether you are curious about bilingual learning, a future place or a visit, this page is designed to make the next conversation feel clear and welcoming.',
       },
+      visit: {
+        eyebrow: 'Book a visit',
+        title: 'Visit requests will begin here.',
+        description: 'The visit-request process is not live yet. This clearly marked area will become the place to find approved booking guidance, availability information and the right contact route when those details are confirmed.',
+        detailsLink: 'See general contact details',
+        note: { badge: 'Visit requests pending', title: 'No booking flow is active', description: 'Happy Hoppers still needs to confirm its visit process, contact details, availability wording and response owner before requests can be collected.' },
+      },
       routes: {
         eyebrow: 'Choose your conversation',
         title: 'We are preparing the right ways to get in touch.',
@@ -637,6 +644,13 @@ export const pageTranslations = {
         eyebrow: 'Contacto',
         title: 'Un saludo amable es un gran punto de partida.',
         description: 'Tanto si tienes curiosidad por el aprendizaje bilingüe, una futura plaza o una visita, esta página está diseñada para que la siguiente conversación resulte clara y acogedora.',
+      },
+      visit: {
+        eyebrow: 'Reservar una visita',
+        title: 'Las solicitudes de visita empezarán aquí.',
+        description: 'El proceso de solicitud de visita aún no está activo. Esta zona claramente identificada será el lugar para encontrar las indicaciones de reserva aprobadas, la información de disponibilidad y el canal de contacto adecuado cuando se confirmen esos detalles.',
+        detailsLink: 'Ver datos de contacto generales',
+        note: { badge: 'Solicitudes de visita pendientes', title: 'No hay un proceso de reserva activo', description: 'Happy Hoppers todavía debe confirmar su proceso de visitas, los datos de contacto, el texto sobre disponibilidad y la persona responsable de responder antes de recopilar solicitudes.' },
       },
       routes: {
         eyebrow: 'Elige tu conversación',
