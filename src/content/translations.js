@@ -1,0 +1,276 @@
+import { pageTranslations } from './pageTranslations'
+
+const sharedNav = [
+  { key: 'home', path: '/' },
+  { key: 'about', path: '/about-us' },
+  { key: 'approach', path: '/our-approach-and-values' },
+  { key: 'bilingual', path: '/bilingual-education' },
+  { key: 'curriculum', path: '/our-curriculum-and-learning' },
+  { key: 'facilities', path: '/our-facilities' },
+  { key: 'admissions', path: '/fees-and-admissions' },
+  { key: 'contact', path: '/contact-us' },
+]
+
+export const supportedLanguages = ['en', 'es']
+
+export const translations = {
+  en: {
+    meta: {
+      title: 'Happy Hoppers Nursery | English & Spanish early years',
+      pageTitles: {
+        about: 'About us',
+        approach: 'Our approach & values',
+        bilingual: 'Bilingual education',
+        curriculum: 'Curriculum & learning',
+        facilities: 'Our facilities',
+        admissions: 'Fees & admissions',
+        contact: 'Contact us',
+        notFound: 'Page not found',
+      },
+    },
+    brand: { name: 'Happy Hoppers', descriptor: 'Nursery' },
+    a11y: {
+      skipToContent: 'Skip to content',
+      mainNavigation: 'Main navigation',
+      languageSelection: 'Language selection',
+      openMenu: 'Open menu',
+      closeMenu: 'Close menu',
+      homeLink: 'Happy Hoppers Nursery home',
+    },
+    languages: { en: 'EN', es: 'ES', english: 'English', spanish: 'Español' },
+    media: { illustrativeCaption: 'Illustrative stock photography — not Happy Hoppers Nursery' },
+    navigation: {
+      home: 'Home',
+      about: 'About us',
+      approach: 'Our approach',
+      bilingual: 'Bilingual education',
+      curriculum: 'Curriculum & learning',
+      facilities: 'Our facilities',
+      admissions: 'Fees & admissions',
+      contact: 'Contact us',
+    },
+    common: { bookVisit: 'Book a visit', discover: 'Discover our nursery', explore: 'Explore', backHome: 'Back to home' },
+    home: {
+      hero: {
+        eyebrow: 'A thoughtful beginning',
+        titleStart: 'A joyful place to ',
+        titleEmphasis: 'grow, wonder',
+        titleEnd: ' and belong.',
+        description: 'A warm bilingual English–Spanish nursery where everyday moments make space for confidence, curiosity and connection.',
+        note: 'A London nursery shaped around little learners and their families.',
+        artAlt: 'Abstract illustration of a sunny nursery garden with playful shapes and plants',
+        artLabel: 'Concept artwork — not a photograph of the nursery',
+        photoAlt: 'Close-up of small hands exploring paint and a blank canvas at a wooden table',
+      },
+      intro: {
+        eyebrow: 'Welcome to Happy Hoppers',
+        statementStart: 'Childhood is a beautiful time for ',
+        statementEmphasis: 'small discoveries',
+        statementEnd: ' and a strong sense of self.',
+        detail: 'Our first-draft story is designed around a simple idea: children flourish when they feel known, encouraged and free to explore.',
+      },
+      bilingual: {
+        eyebrow: 'Two languages, one warm welcome',
+        title: 'English and Spanish, naturally woven into the day.',
+        description: 'We celebrate bilingual learning as a shared, playful experience — through conversation, stories, songs and everyday routines.',
+        english: 'English',
+        spanish: 'Español',
+        link: 'Explore bilingual education',
+        artAlt: 'Abstract illustration featuring speech bubbles, books and garden leaves',
+        artLabel: 'Concept artwork — local placeholder',
+      },
+      values: {
+        eyebrow: 'What guides us',
+        title: 'Care with intention. Learning with joy.',
+        description: 'The relationships, rhythms and choices behind every day matter. These are the values this website will bring to life in more detail.',
+        cards: [
+          { number: '01', title: 'Belonging', text: 'Making room for each child’s voice, family and way of being.' },
+          { number: '02', title: 'Curiosity', text: 'Protecting time to question, experiment and notice the world.' },
+          { number: '03', title: 'Kindness', text: 'Growing caring relationships with one another and our community.' },
+        ],
+      },
+      learning: {
+        eyebrow: 'Learning in the everyday',
+        title: 'A rich day begins with a child’s curiosity.',
+        description: 'Our curriculum page will show how thoughtful adult guidance, open-ended play and meaningful routines come together.',
+        cards: [
+          { title: 'Make & imagine', text: 'Ideas take shape through materials, movement and make-believe.', icon: 'spark', color: '#efcf83' },
+          { title: 'Explore & notice', text: 'Questions grow through nature, stories and hands-on investigation.', icon: 'leaf', color: '#a7bfa6' },
+          { title: 'Connect & express', text: 'Language, friendship and emotion have a place in every day.', icon: 'speech', color: '#e4b9a5' },
+        ],
+      },
+      spaces: {
+        eyebrow: 'Our spaces',
+        title: 'Room to settle in, stretch out and explore.',
+        description: 'A future facilities page will introduce the nursery environment. This prototype uses a clearly marked concept visual until approved photography or illustrations are available.',
+        link: 'See our facilities',
+        artAlt: 'Abstract illustration of a calm nursery room with blocks, plants and sunshine',
+        artLabel: 'Concept artwork — replace with approved imagery',
+      },
+      admissions: {
+        eyebrow: 'Thinking about joining us?',
+        title: 'Come and get a feel for Happy Hoppers.',
+        description: 'A visit is the best way to ask questions, see the setting and talk about what matters to your family. Enquiries and availability will be added when the admissions process is confirmed.',
+        primary: 'Book a visit',
+        secondary: 'Fees & admissions',
+      },
+    },
+    footer: {
+      summary: 'A bilingual English–Spanish nursery concept for London families.',
+      explore: 'Explore',
+      noteTitle: 'A considered first draft',
+      note: 'Content, photos, contact details, admissions information and legal pages are awaiting customer approval.',
+      copyright: '© 2026 Happy Hoppers Nursery. Prototype for presentation only.',
+      assets: 'Asset inventory',
+    },
+    placeholder: {
+      badge: 'Page in development',
+      titlePrefix: 'The ',
+      titleSuffix: ' page is next.',
+      description: 'This route is part of the approved site structure. Its finished content has not been created in this Stage 1 prototype, so it is intentionally shown as a holding page.',
+    },
+    routeNames: {
+      about: 'About us',
+      approach: 'Our approach and values',
+      bilingual: 'Bilingual education',
+      curriculum: 'Our curriculum and learning',
+      facilities: 'Our facilities',
+      admissions: 'Fees and admissions',
+      contact: 'Contact us',
+    },
+  },
+  es: {
+    meta: {
+      title: 'Happy Hoppers Nursery | educación infantil en inglés y español',
+      pageTitles: {
+        about: 'Sobre nosotros',
+        approach: 'Nuestro enfoque y valores',
+        bilingual: 'Educación bilingüe',
+        curriculum: 'Currículo y aprendizaje',
+        facilities: 'Nuestras instalaciones',
+        admissions: 'Tarifas y admisiones',
+        contact: 'Contacto',
+        notFound: 'Página no encontrada',
+      },
+    },
+    brand: { name: 'Happy Hoppers', descriptor: 'Nursery' },
+    a11y: {
+      skipToContent: 'Ir al contenido',
+      mainNavigation: 'Navegación principal',
+      languageSelection: 'Selección de idioma',
+      openMenu: 'Abrir menú',
+      closeMenu: 'Cerrar menú',
+      homeLink: 'Inicio de Happy Hoppers Nursery',
+    },
+    languages: { en: 'EN', es: 'ES', english: 'English', spanish: 'Español' },
+    media: { illustrativeCaption: 'Fotografía de stock ilustrativa — no es Happy Hoppers Nursery' },
+    navigation: {
+      home: 'Inicio',
+      about: 'Sobre nosotros',
+      approach: 'Nuestro enfoque',
+      bilingual: 'Educación bilingüe',
+      curriculum: 'Currículo y aprendizaje',
+      facilities: 'Nuestras instalaciones',
+      admissions: 'Tarifas y admisiones',
+      contact: 'Contacto',
+    },
+    common: { bookVisit: 'Reservar una visita', discover: 'Descubre nuestra nursery', explore: 'Descubrir', backHome: 'Volver al inicio' },
+    home: {
+      hero: {
+        eyebrow: 'Un comienzo pensado con cariño',
+        titleStart: 'Un lugar alegre para ',
+        titleEmphasis: 'crecer, descubrir',
+        titleEnd: ' y sentirse parte.',
+        description: 'Una nursery cálida y bilingüe en inglés y español donde cada día abre espacio para la confianza, la curiosidad y la conexión.',
+        note: 'Una nursery londinense pensada para los pequeños y sus familias.',
+        artAlt: 'Ilustración abstracta de un jardín infantil soleado con formas juguetonas y plantas',
+        artLabel: 'Ilustración conceptual — no es una foto de la nursery',
+        photoAlt: 'Primer plano de pequeñas manos explorando pintura y un lienzo en blanco sobre una mesa de madera',
+      },
+      intro: {
+        eyebrow: 'Bienvenidos a Happy Hoppers',
+        statementStart: 'La infancia es un momento precioso para ',
+        statementEmphasis: 'pequeños descubrimientos',
+        statementEnd: ' y una identidad fuerte.',
+        detail: 'Esta primera propuesta nace de una idea sencilla: los niños florecen cuando se sienten vistos, animados y libres para explorar.',
+      },
+      bilingual: {
+        eyebrow: 'Dos idiomas, una bienvenida cálida',
+        title: 'El inglés y el español se entrelazan de forma natural durante el día.',
+        description: 'Celebramos el aprendizaje bilingüe como una experiencia compartida y lúdica: con conversaciones, cuentos, canciones y rutinas cotidianas.',
+        english: 'English',
+        spanish: 'Español',
+        link: 'Conoce nuestra educación bilingüe',
+        artAlt: 'Ilustración abstracta con bocadillos de diálogo, libros y hojas de jardín',
+        artLabel: 'Ilustración conceptual — marcador local',
+      },
+      values: {
+        eyebrow: 'Lo que nos guía',
+        title: 'Cuidar con intención. Aprender con alegría.',
+        description: 'Importan las relaciones, los ritmos y las decisiones que dan forma a cada día. Estos son los valores que este sitio desarrollará con más detalle.',
+        cards: [
+          { number: '01', title: 'Pertenencia', text: 'Dar espacio a la voz, la familia y la manera de ser de cada niño.' },
+          { number: '02', title: 'Curiosidad', text: 'Proteger el tiempo para preguntar, probar y observar el mundo.' },
+          { number: '03', title: 'Amabilidad', text: 'Construir relaciones de cuidado con los demás y nuestra comunidad.' },
+        ],
+      },
+      learning: {
+        eyebrow: 'Aprender en lo cotidiano',
+        title: 'Un día lleno de experiencias nace de la curiosidad de cada niño.',
+        description: 'La página del currículo mostrará cómo se unen la guía atenta de los adultos, el juego abierto y las rutinas con sentido.',
+        cards: [
+          { title: 'Crear e imaginar', text: 'Las ideas cobran forma con materiales, movimiento y juego simbólico.', icon: 'spark', color: '#efcf83' },
+          { title: 'Explorar y observar', text: 'Las preguntas crecen con la naturaleza, los cuentos y la investigación práctica.', icon: 'leaf', color: '#a7bfa6' },
+          { title: 'Conectar y expresar', text: 'El lenguaje, la amistad y las emociones tienen lugar todos los días.', icon: 'speech', color: '#e4b9a5' },
+        ],
+      },
+      spaces: {
+        eyebrow: 'Nuestros espacios',
+        title: 'Espacio para acomodarse, moverse y explorar.',
+        description: 'Una futura página de instalaciones presentará el entorno de la nursery. Este prototipo utiliza una imagen conceptual claramente marcada hasta contar con fotos o ilustraciones aprobadas.',
+        link: 'Ver nuestras instalaciones',
+        artAlt: 'Ilustración abstracta de una sala infantil tranquila con bloques, plantas y sol',
+        artLabel: 'Ilustración conceptual — sustituir por imágenes aprobadas',
+      },
+      admissions: {
+        eyebrow: '¿Estáis pensando en uniros?',
+        title: 'Venid a conocer el ambiente de Happy Hoppers.',
+        description: 'Una visita es la mejor forma de hacer preguntas, conocer el espacio y hablar de lo que importa a vuestra familia. Las consultas y la disponibilidad se añadirán cuando el proceso de admisión esté confirmado.',
+        primary: 'Reservar una visita',
+        secondary: 'Tarifas y admisiones',
+      },
+    },
+    footer: {
+      summary: 'Un concepto de nursery bilingüe inglés–español para familias de Londres.',
+      explore: 'Explorar',
+      noteTitle: 'Una primera propuesta cuidada',
+      note: 'El contenido, las fotos, los datos de contacto, la información de admisiones y las páginas legales esperan la aprobación del cliente.',
+      copyright: '© 2026 Happy Hoppers Nursery. Prototipo solo para presentación.',
+      assets: 'Inventario de recursos',
+    },
+    placeholder: {
+      badge: 'Página en desarrollo',
+      titlePrefix: 'La página ',
+      titleSuffix: ' es la siguiente.',
+      description: 'Esta ruta forma parte de la estructura aprobada del sitio. Su contenido final aún no se ha creado en este prototipo de la Fase 1, por eso se muestra intencionadamente como una página provisional.',
+    },
+    routeNames: {
+      about: 'Sobre nosotros',
+      approach: 'Nuestro enfoque y valores',
+      bilingual: 'Educación bilingüe',
+      curriculum: 'Nuestro currículo y aprendizaje',
+      facilities: 'Nuestras instalaciones',
+      admissions: 'Tarifas y admisiones',
+      contact: 'Contacto',
+    },
+  },
+}
+
+export function getCopy(language) {
+  const selectedLanguage = translations[language] ? language : 'en'
+  return { ...translations[selectedLanguage], pages: pageTranslations[selectedLanguage] }
+}
+
+export function getNavigation(copy) {
+  return sharedNav.map((item) => ({ ...item, label: copy.navigation[item.key] }))
+}
