@@ -5,10 +5,24 @@ import { SectionHeading } from '../components/SectionHeading'
 
 export function ContactPage({ copy, navigate }) {
   const page = copy.pages.contact
+  const navigateToDetails = (event) => {
+    event.preventDefault()
+    navigate('/contact-us#contact-details')
+  }
 
   return (
     <>
       <PageHero page={page.hero} navigate={navigate} accent="sage" motif="contact" />
+
+      <section id="visit-requests" className="content-section content-section--yellow visit-request-section" tabIndex="-1">
+        <div className="container visit-request-grid">
+          <div><SectionHeading eyebrow={page.visit.eyebrow} title={page.visit.title} intro={page.visit.description} /></div>
+          <div className="visit-request-panel">
+            <InfoNotice {...page.visit.note} />
+            <a href="/contact-us#contact-details" className="text-link" onClick={navigateToDetails}>{page.visit.detailsLink}</a>
+          </div>
+        </div>
+      </section>
 
       <section className="content-section content-section--paper">
         <div className="container">
@@ -26,7 +40,7 @@ export function ContactPage({ copy, navigate }) {
         </div>
       </section>
 
-      <section className="content-section content-section--dark">
+      <section id="contact-details" className="content-section content-section--dark" tabIndex="-1">
         <div className="container contact-details-grid">
           <div><SectionHeading eyebrow={page.details.eyebrow} title={page.details.title} intro={page.details.intro} /></div>
           <dl className="contact-detail-list">
